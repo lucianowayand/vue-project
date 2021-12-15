@@ -1,14 +1,14 @@
 <template>
-  <primeiroComponente/>
+  <LifeCycle/>
 </template>
 
 <script>
-import primeiroComponente from './components/primeiroComponente.vue'
+import LifeCycle from './components/LifeCycle.vue'
 
 export default {
   name: 'App',
   components:{
-    primeiroComponente
+    LifeCycle
   }
     
 }
