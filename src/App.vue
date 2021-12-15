@@ -1,14 +1,14 @@
 <template>
-  <LifeCycle/>
+  <Form/>
 </template>
 
 <script>
-import LifeCycle from './components/LifeCycle.vue'
+import Form from './components/Form.vue'
 
 export default {
   name: 'App',
   components:{
-    LifeCycle
+    Form
   }
     
 }
