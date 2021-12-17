@@ -1,6 +1,9 @@
 <template>
-    <p>Password is: {{password}}</p>
-    <button @click="showPassword">{{buttonText}}</button>
+    <div class="box">
+        <p>Password is: {{password}}</p>
+        <button @click="showPassword">{{buttonText}}</button>
+    </div>
+    
 </template>
 
 <script>
@@ -26,4 +29,12 @@ export default {
     }
 }
 </script>
+
+<style>
+    .box{
+    background-color: white;
+    max-width: fit-content;
+    padding: 3rem;
+  }
+</style>
 
