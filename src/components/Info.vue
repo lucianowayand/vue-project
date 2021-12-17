@@ -3,6 +3,11 @@
         <p>Password is: {{password}}</p>
         <button @click="showPassword">{{buttonText}}</button>
     </div>
+    <div class="box" style="margin-top:2rem; text-align:left;">
+        <ul>
+            <li v-for="(lang, index) in list" v-bind:key="index">{{lang}}</li>
+        </ul>
+    </div>
     
 </template>
 
@@ -12,7 +17,9 @@ export default {
     data(){
         return{
             password: "*****",
-            buttonText: "Show password"
+            buttonText: "Show password",
+            list: ['Ruby', 'Python', 'Vue', 'Javascript', 'C']
+            //You can even pass dicts and refer to it by dict.key
         }
     },
     methods:{
@@ -33,8 +40,8 @@ export default {
 <style>
     .box{
     background-color: white;
-    max-width: fit-content;
     padding: 3rem;
+    width: fit-content;
   }
 </style>
 

@@ -1,13 +1,23 @@
 <template>
-  <Info/>
+  <div class="container" style="text-align: -webkit-center;">
+    <info/>  
+  </div>
+  
 </template>
 
 <script>
 import Info from './components/Info.vue'
+import Form from './components/Form.vue'
+import LifeCycle from './components/LifeCycle.vue'
+import primeiroComponente from './components/primeiroComponente.vue'
+
 export default {
   name: 'App',
   components:{
-    Info
+    Info,
+    Form,
+    LifeCycle,
+    primeiroComponente
   }
     
 }
@@ -17,13 +27,9 @@ export default {
   body{
     background-color: aqua;
     color: blueviolet;
-
-    margin-top:25rem;
-  }
-  .box{
-    background-color: red;
-    max-width: fit-content;
     text-align: center;
-    padding: 3rem;
+    margin-top: 20rem;
   }
+  
+
 </style>
